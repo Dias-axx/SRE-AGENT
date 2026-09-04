@@ -1,0 +1,17 @@
+# Squad: ignore runtime state (logs, inbox, sessions)
+.squad/orchestration-log/
+.squad/log/
+.squad/decisions/inbox/
+.squad/sessions/
+# Squad: SubSquad activation file (local to this machine)
+.squad-workstream
+infra/bicep/main.json
+node_modules/
+
+# VM workshop runtime artifacts (investigation traces, postmortems, audit logs)
+workshops/vm/output/*
+!workshops/vm/output/.gitkeep
+
+# App Service workshop: .NET build artifacts
+workshops/appservice/**/bin/
+workshops/appservice/**/obj/
